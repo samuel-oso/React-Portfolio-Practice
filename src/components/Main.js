@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
-import LogoComponent from "../SubComponents/LogoComponent";
-import PowerButton from "../SubComponents/PowerButton";
-import SocialIcons from "../SubComponents/SocialIcons";
+import LogoComponent from "../subComponents/LogoComponent";
+import PowerButton from "../subComponents/PowerButton";
+import SocialIcons from "../subComponents/SocialIcons";
 import { NavLink } from "react-router-dom";
 import { YinYang } from "./AllSvgs";
 import Intro from "./Intro";

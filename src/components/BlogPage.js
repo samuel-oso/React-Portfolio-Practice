@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import img from "../assets/Images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg";
-import SocialIcons from "../SubComponents/SocialIcons";
-import LogoComponent from "../SubComponents/LogoComponent";
-import PowerButton from "../SubComponents/PowerButton";
+import SocialIcons from "../subComponents/SocialIcons";
+import LogoComponent from "../subComponents/LogoComponent";
+import PowerButton from "../subComponents/PowerButton";
 import { Blogs } from "../data/BlogData";
 import BlogComponent from "./BlogComponent";
-import AnchorComponent from "../SubComponents/Anchor";
+import AnchorComponent from "../subComponents/Anchor";
+import BigTitle from "../subComponents/BigTitle";
 
 const MainContainer = styled.div`
   background-image: url(${img});
@@ -59,6 +60,12 @@ const BlogPage = () => {
             })}
           </Grid>
         </Center>
+        <BigTitle
+          style={{ color: "rgba(0, 0, 0, 0.1)" }}
+          text="BLOG"
+          top="5rem"
+          left="5rem"
+        />
       </Container>
     </MainContainer>
   );

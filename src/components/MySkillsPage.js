@@ -3,10 +3,11 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./Themes";
 import styled from "styled-components";
 import { Design, Develope } from "./AllSvgs";
-import LogoComponent from "../SubComponents/LogoComponent";
-import SocialIcons from "../SubComponents/SocialIcons";
-import PowerButton from "../SubComponents/PowerButton";
-import ParticleComponent from "../SubComponents/ParticleComponent";
+import LogoComponent from "../subComponents/LogoComponent";
+import SocialIcons from "../subComponents/SocialIcons";
+import PowerButton from "../subComponents/PowerButton";
+import ParticleComponent from "../subComponents/ParticleComponent";
+import BigTitle from "../subComponents/BigTitle";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -127,6 +128,12 @@ const MySkillsPage = () => {
             <p>VScode, Github, Codepen etc.</p>
           </Description>
         </Main>
+        <BigTitle
+          style={{ color: "rgba(0, 0, 0, 0.1)" }}
+          text="SKILLS"
+          top="80%"
+          right="30%"
+        />
       </Box>
     </ThemeProvider>
   );
